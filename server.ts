@@ -7,6 +7,10 @@ app.get('/ping', (req: Request, res: Response) => {
     res.json({ message: 'pong' });
 });
 
+app.get("/products", (req,res) =>{
+    res.send(products);
+})
+
 
 const PORT = 3000;
 
