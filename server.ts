@@ -8,6 +8,11 @@ app.get('/ping', (req: Request, res: Response) => {
 });
 
 
+
+app.get("/user", (req,res) =>{
+    res.send(users)
+})
+
 const PORT = 3000;
 
 app.listen(PORT, () => {
