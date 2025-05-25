@@ -10,6 +10,10 @@ app.get('/ping', (req: Request, res: Response) => {
 app.get("/user", (req,res) =>{
     res.send(users)
 })
+app.get("/products", (req,res) =>{
+    res.send(products);
+})
+
 
 const PORT = 3000;
 
