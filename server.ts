@@ -7,6 +7,9 @@ app.get('/ping', (req: Request, res: Response) => {
     res.json({ message: 'pong' });
 });
 
+app.get("/user", (req,res) =>{
+    res.send(users)
+})
 app.get("/products", (req,res) =>{
     res.send(products);
 })
