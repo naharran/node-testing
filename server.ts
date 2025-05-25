@@ -14,6 +14,7 @@ app.get("/products", (req,res) =>{
     res.send(products);
 })
 
+console.log("feature branch code")
 
 const PORT = 3000;
 
